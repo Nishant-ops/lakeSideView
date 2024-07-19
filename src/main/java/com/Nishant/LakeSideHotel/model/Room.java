@@ -6,7 +6,6 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.sql.Blob;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * @author Gaurav Yadav
@@ -17,9 +16,8 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Room {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", updatable = false, nullable = false)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String roomType;
     private BigDecimal roomPrice;
     private boolean isBooked = false;
