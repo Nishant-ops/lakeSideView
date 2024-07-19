@@ -7,9 +7,7 @@ import java.math.BigDecimal;
 import java.sql.Blob;
 import java.util.List;
 
-/**
- * @author Gaurav Yadav
- */
+
 @Entity
 @Getter
 @Setter
